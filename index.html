@@ -3,31 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Blog preview card</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <link rel="stylesheet" href="style/style.css">  
 </head>
 <body>
-<div class="card">
+<div class="card"> <!--create main class card to wrap everything in it.-->
   <img src="/assets/images/illustration-article.svg" alt="given-img">
-  <span class="highlight">Learning</span>
-  <br>
-  Published 21 Dec 2023<br>
-  <br>
-  <h1>HTML & CSS foundations</h1>
-
+  <div class="meta"> <!--meta class contains the lable and also contails data and title of the card.  -->
+      <span class="highlight">Learning</span>
+      <p class="date">21 Dec 2023 </p> <!--created a separate class for date.-->
+      <br>
+      <h1>HTML & CSS foundations</h1>
+  </div>
   <p>These languages are the backbone of every website, defining structure, content, and presentation. </p> 
-  <div class="author" style="display: flex; align-items : center">
-    <img src="assets/images/image-avatar.webp" style="width:40px; margin-right:10px;" alt="greg-hooper" class="avatar" >
+    <div class="author">
+    <img src="assets/images/image-avatar.webp" alt="greg-hooper" class="avatar" >
     <span class="name">Greg Hooper</span>
   </div>
-  
-
 </div>
-
 </body>
 </html>
